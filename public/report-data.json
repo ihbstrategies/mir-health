@@ -1,0 +1,46 @@
+{
+  "data": "2025-08-23",
+  "resumo_executivo": {
+    "sentimento_geral": "Neutro",
+    "principais_tendencias": [
+      "Aumento de investimentos em IA na saúde",
+      "Crescimento do mercado de dispositivos médicos",
+      "Regulamentação crescente de HealthTechs"
+    ]
+  },
+  "sectors": {
+    "global_market": {
+      "name": "Análise Global do Mercado",
+      "icon": "🌍",
+      "count": 2,
+      "description": "Principais desenvolvimentos em análise global do mercado",
+      "news": [
+        {
+          "titulo": "OMS alerta para aumento de casos de gripe",
+          "link": "https://www.reuters.com/business/healthcare-pharmaceuticals/oms-alerta-para-aumento-de-casos-de-gripe",
+          "resumo": "A Organização Mundial da Saúde (OMS) divulgou um alerta sobre o aumento de casos de gripe em diversos países."
+        },
+        {
+          "titulo": "Mercado global de saúde deve crescer X% em 2024",
+          "link": "https://www.businesswire.com/newsroom/industry/health/mercado-global-de-saude-deve-crescer-x-em-2024",
+          "resumo": "Previsões apontam um crescimento significativo no mercado global de saúde para o próximo ano."
+        }
+      ]
+    },
+    "big_pharma": {
+      "name": "Big Pharma",
+      "icon": "💊",
+      "count": 2,
+      "description": "Principais desenvolvimentos em big pharma",
+      "news": [
+        {
+          "titulo": "Laboratório X lança novo medicamento para diabetes",
+          "link": "https://www.businesswire.com/newsroom/industry/health/laboratorio-x-lanca-novo-medicamento-para-diabetes",
+          "resumo": "Um grande laboratório farmacêutico anuncia o lançamento de um novo medicamento para o tratamento de diabetes."
+        }
+      ]
+    }
+  },
+  "generated_at": "2025-08-23T22:00:00.000Z",
+  "version": "1.0"
+}

@@ -1,0 +1,42 @@
+{
+  "name": "n8n-healthcare-sync",
+  "version": "1.0.0",
+  "description": "Script para sincronizar workflow e nós customizados com n8n Cloud",
+  "main": "n8n-sync.js",
+  "scripts": {
+    "sync": "node n8n-sync.js",
+    "sync:test": "node n8n-sync.js test",
+    "sync:workflow": "node n8n-sync.js workflow",
+    "sync:nodes": "node n8n-sync.js nodes",
+    "sync:full": "node n8n-sync.js full",
+    "watch": "nodemon --watch n8n-nodes --watch 'HealthCare News.json' --exec 'npm run sync:full'",
+    "dev": "node dev-sync.js",
+    "setup": "node setup-n8n-api.js",
+    "manual-sync": "node manual-sync.js sync",
+    "manual-history": "node manual-sync.js history",
+    "manual-restore": "node manual-sync.js restore",
+    "copy-nodes": "node copy-nodes.js list",
+    "copy-node": "node copy-nodes.js copy",
+    "copy-all-nodes": "node copy-nodes.js copy-all",
+    "diff-node": "node copy-nodes.js diff"
+  },
+  "keywords": [
+    "n8n",
+    "workflow",
+    "sync",
+    "automation",
+    "healthcare"
+  ],
+  "author": "MIR Health",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
