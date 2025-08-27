@@ -1,0 +1,282 @@
+{
+  "data": "2025-08-27",
+  "resumo_executivo": {
+    "sentimento_geral": "Neutro",
+    "principais_tendencias": [
+      "Aumento de investimentos em IA na saúde",
+      "Consolidação no setor de dispositivos médicos",
+      "Crescimento do mercado de HealthTech"
+    ]
+  },
+  "stock_data": {
+    "farmaceuticas": [
+      {
+        "ticker": "JNJ",
+        "nome": "Johnson & Johnson",
+        "preco": 165.3,
+        "variacao": 0.5
+      },
+      {
+        "ticker": "PFE",
+        "nome": "Pfizer",
+        "preco": 48.95,
+        "variacao": 0.25
+      }
+    ],
+    "dispositivos_medicos": [
+      {
+        "ticker": "BSX",
+        "nome": "Boston Scientific",
+        "preco": 42.8,
+        "variacao": 0.3
+      },
+      {
+        "ticker": "ISRG",
+        "nome": "Intuitive Surgical",
+        "preco": 289.95,
+        "variacao": -1.5
+      }
+    ],
+    "ortopedia": [
+      {
+        "ticker": "SYK",
+        "nome": "Stryker Corporation",
+        "preco": 260,
+        "variacao": 2
+      },
+      {
+        "ticker": "ZBH",
+        "nome": "Zimmer Biomet",
+        "preco": 120.5,
+        "variacao": 1.5
+      }
+    ],
+    "acoes_brasileiras": [
+      {
+        "ticker": "RDOR3",
+        "nome": "Rede D'Or",
+        "preco": 45.75,
+        "variacao": 0.35
+      },
+      {
+        "ticker": "DASA3",
+        "nome": "DASA",
+        "preco": 58.9,
+        "variacao": 0.75
+      }
+    ]
+  },
+  "trend_data": {
+    "labels": [
+      "Aumento de investime...",
+      "Consolidação no seto...",
+      "Crescimento do merca..."
+    ],
+    "datasets": [
+      {
+        "label": "Relevância das Tendências",
+        "data": [
+          21,
+          21,
+          37
+        ],
+        "backgroundColor": [
+          "rgba(54, 162, 235, 0.6)",
+          "rgba(255, 99, 132, 0.6)",
+          "rgba(255, 205, 86, 0.6)"
+        ]
+      }
+    ]
+  },
+  "sector_performance": {
+    "labels": [
+      "Análise Global do Mercado",
+      "Tendências Globais em Saúde",
+      "Big Pharma"
+    ],
+    "datasets": [
+      {
+        "label": "Notícias por Setor",
+        "data": [
+          2,
+          2,
+          2
+        ],
+        "backgroundColor": [
+          "rgba(255, 99, 132, 0.6)",
+          "rgba(54, 162, 235, 0.6)",
+          "rgba(255, 205, 86, 0.6)"
+        ]
+      }
+    ]
+  },
+  "principais_noticias": [
+    "OMS alerta para aumento de casos de gripe",
+    "Telemedicina ganha espaço no atendimento primário",
+    "Pfizer anuncia resultados positivos em testes de nova droga"
+  ],
+  "metricas": {
+    "total_acoes": 8,
+    "setores_analisados": 8,
+    "noticias_processadas": 18
+  },
+  "sectors": {
+    "global_market": {
+      "name": "Análise Global do Mercado",
+      "icon": "🌍",
+      "count": 2,
+      "description": "Principais desenvolvimentos em análise global do mercado",
+      "news": [
+        {
+          "titulo": "OMS alerta para aumento de casos de gripe",
+          "link": "https://www.reuters.com/business/healthcare-pharmaceuticals/example-news-1",
+          "resumo": "A Organização Mundial da Saúde emitiu um alerta sobre o aumento de casos de gripe em diversos países."
+        },
+        {
+          "titulo": "Mercado global de saúde projeta crescimento de X% em 2024",
+          "link": "https://www.reuters.com/business/healthcare-pharmaceuticals/example-news-2",
+          "resumo": "Relatório da consultoria Y prevê um crescimento significativo do mercado global de saúde para o próximo ano."
+        }
+      ]
+    },
+    "global_trends": {
+      "name": "Tendências Globais em Saúde",
+      "icon": "��",
+      "count": 2,
+      "description": "Principais desenvolvimentos em tendências globais em saúde",
+      "news": [
+        {
+          "titulo": "Telemedicina ganha espaço no atendimento primário",
+          "link": "https://www.medicalfuturist.com/example-news-3",
+          "resumo": "A telemedicina está se consolidando como uma alternativa viável para o acesso a cuidados de saúde primários."
+        },
+        {
+          "titulo": "Envelhecimento populacional impulsiona demanda por serviços de saúde",
+          "link": "https://www.medicalfuturist.com/example-news-4",
+          "resumo": "O aumento da expectativa de vida global impacta significativamente a demanda por serviços de saúde para idosos."
+        }
+      ]
+    },
+    "big_pharma": {
+      "name": "Big Pharma",
+      "icon": "💊",
+      "count": 2,
+      "description": "Principais desenvolvimentos em big pharma",
+      "news": [
+        {
+          "titulo": "Pfizer anuncia resultados positivos em testes de nova droga",
+          "link": "https://www.businesswire.com/newsroom/industry/health/example-news-5",
+          "resumo": "A Pfizer divulgou resultados promissores em testes clínicos de um novo medicamento para tratar X."
+        },
+        {
+          "titulo": "Johnson & Johnson lança nova campanha de vacinação",
+          "link": "https://www.businesswire.com/newsroom/industry/health/example-news-6",
+          "resumo": "A Johnson & Johnson lançou uma nova campanha para promover a vacinação contra Y."
+        }
+      ]
+    },
+    "orthopedics": {
+      "name": "Ortopedia e Dispositivos Médicos",
+      "icon": "��",
+      "count": 3,
+      "description": "Principais desenvolvimentos em ortopedia e dispositivos médicos",
+      "news": [
+        {
+          "titulo": "Nova prótese de joelho promete maior durabilidade",
+          "link": "https://www.massdevice.com/example-news-7",
+          "resumo": "Empresa Z lança uma nova prótese de joelho com tecnologia inovadora que promete maior durabilidade e menor risco de falhas."
+        },
+        {
+          "titulo": "Avanços em cirurgia robótica para ortopedia",
+          "link": "https://orthofeed.com/example-news-8",
+          "resumo": "Discussão sobre o avanço da tecnologia robótica aplicada em cirurgias ortopédicas e seus benefícios."
+        },
+        {
+          "titulo": "Estudo aponta aumento na utilização de implantes ortopédicos biodegradáveis",
+          "link": "https://orthobuzz.jbjs.org/example-news-9",
+          "resumo": "Estudo recente mostra crescimento no uso de implantes ortopédicos biodegradáveis, impulsionado pela busca por soluções mais sustentáveis e com melhor integração óssea."
+        }
+      ]
+    },
+    "ai_health": {
+      "name": "IA em Saúde",
+      "icon": "🤖",
+      "count": 2,
+      "description": "Principais desenvolvimentos em ia em saúde",
+      "news": [
+        {
+          "titulo": "IA ajuda a diagnosticar doenças com maior precisão",
+          "link": "https://www.themedicalfuturist.com/example-news-10",
+          "resumo": "Nova tecnologia de IA demonstra capacidade de diagnosticar doenças com maior precisão que métodos tradicionais."
+        },
+        {
+          "titulo": "Plataforma de IA melhora o planejamento de tratamentos oncológicos",
+          "link": "https://www.themedicalfuturist.com/example-news-11",
+          "resumo": "Plataforma de IA auxilia oncologistas no planejamento de tratamentos, otimizando resultados e reduzindo efeitos colaterais."
+        }
+      ]
+    },
+    "brazil_health": {
+      "name": "Cenário Brasileiro de Saúde",
+      "icon": "��🇷",
+      "count": 2,
+      "description": "Principais desenvolvimentos em cenário brasileiro de saúde",
+      "news": [
+        {
+          "titulo": "Governo anuncia novos investimentos em saúde pública no Brasil",
+          "link": "https://braziljournal.com/hot-topic/health-journal/example-news-12",
+          "resumo": "Governo brasileiro anuncia pacote de investimentos para fortalecer o sistema de saúde pública."
+        },
+        {
+          "titulo": "Cresce a demanda por planos de saúde suplementares no Brasil",
+          "link": "https://braziljournal.com/hot-topic/health-journal/example-news-13",
+          "resumo": "Mercado de planos de saúde suplementares registra crescimento significativo no Brasil."
+        }
+      ]
+    },
+    "medtech_innovation": {
+      "name": "Inovação em MedTech",
+      "icon": "��",
+      "count": 2,
+      "description": "Principais desenvolvimentos em inovação em medtech",
+      "news": [
+        {
+          "titulo": "Dispositivo portátil monitora sinais vitais em tempo real",
+          "link": "https://www.mddionline.com/example-news-14",
+          "resumo": "Nova tecnologia permite monitoramento remoto de sinais vitais, melhorando o acompanhamento de pacientes."
+        },
+        {
+          "titulo": "Implante biodegradável revoluciona tratamento de fraturas",
+          "link": "https://www.mddionline.com/example-news-15",
+          "resumo": "Novo implante biodegradável promete acelerar a recuperação de fraturas ósseas."
+        }
+      ]
+    },
+    "healthtech_startups": {
+      "name": "Startups de HealthTech",
+      "icon": "🚀",
+      "count": 3,
+      "description": "Principais desenvolvimentos em startups de healthtech",
+      "news": [
+        {
+          "titulo": "Startup brasileira desenvolve app para teleconsulta",
+          "link": "https://techcrunch.com/tag/health/example-news-16",
+          "resumo": "Startup brasileira lança aplicativo que facilita o acesso a teleconsultas."
+        },
+        {
+          "titulo": "Startup americana recebe investimento para desenvolver dispositivo de monitoramento remoto",
+          "link": "https://techcrunch.com/tag/health/example-news-17",
+          "resumo": "Startup recebe aporte financeiro para o desenvolvimento de dispositivo de monitoramento remoto para pacientes crônicos."
+        },
+        {
+          "titulo": "Startup de IA para diagnóstico de imagens médicas fecha nova rodada de investimentos",
+          "link": "https://techcrunch.com/tag/health/example-news-18",
+          "resumo": "Startup de inteligência artificial focada em diagnóstico por imagem recebe investimentos para expandir seus negócios."
+        }
+      ]
+    }
+  },
+  "message": "Dados de gráficos integrados com análise da IA",
+  "generated_at": "2025-08-27T21:53:59.513Z",
+  "version": "1.0"
+}
