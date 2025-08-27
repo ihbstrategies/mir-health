@@ -1,0 +1,282 @@
+{
+  "data": "2025-08-23",
+  "resumo_executivo": {
+    "sentimento_geral": "Neutro",
+    "principais_tendencias": [
+      "Aumento de investimentos em IA na saúde",
+      "Crescimento do mercado de dispositivos médicos",
+      "Regulamentação crescente de HealthTechs"
+    ]
+  },
+  "stock_data": {
+    "farmaceuticas": [
+      {
+        "ticker": "JNJ",
+        "nome": "Johnson & Johnson",
+        "preco": 165.3,
+        "variacao": 0.5
+      },
+      {
+        "ticker": "PFE",
+        "nome": "Pfizer",
+        "preco": 48.95,
+        "variacao": 0.25
+      }
+    ],
+    "dispositivos_medicos": [
+      {
+        "ticker": "BSX",
+        "nome": "Boston Scientific",
+        "preco": 42.8,
+        "variacao": 0.3
+      },
+      {
+        "ticker": "ISRG",
+        "nome": "Intuitive Surgical",
+        "preco": 289.95,
+        "variacao": -1.5
+      }
+    ],
+    "ortopedia": [
+      {
+        "ticker": "SYK",
+        "nome": "Stryker Corporation",
+        "preco": 260,
+        "variacao": 2
+      },
+      {
+        "ticker": "ZBH",
+        "nome": "Zimmer Biomet",
+        "preco": 120.5,
+        "variacao": 1.5
+      }
+    ],
+    "acoes_brasileiras": [
+      {
+        "ticker": "RDOR3",
+        "nome": "Rede D'Or",
+        "preco": 45.75,
+        "variacao": 0.35
+      },
+      {
+        "ticker": "DASA3",
+        "nome": "DASA",
+        "preco": 58.9,
+        "variacao": 0.75
+      }
+    ]
+  },
+  "trend_data": {
+    "labels": [
+      "Aumento de investime...",
+      "Crescimento do merca...",
+      "Regulamentação cresc..."
+    ],
+    "datasets": [
+      {
+        "label": "Relevância das Tendências",
+        "data": [
+          47,
+          36,
+          29
+        ],
+        "backgroundColor": [
+          "rgba(54, 162, 235, 0.6)",
+          "rgba(255, 99, 132, 0.6)",
+          "rgba(255, 205, 86, 0.6)"
+        ]
+      }
+    ]
+  },
+  "sector_performance": {
+    "labels": [
+      "Análise Global do Mercado",
+      "Tendências Globais em Saúde",
+      "Big Pharma"
+    ],
+    "datasets": [
+      {
+        "label": "Notícias por Setor",
+        "data": [
+          2,
+          2,
+          2
+        ],
+        "backgroundColor": [
+          "rgba(255, 99, 132, 0.6)",
+          "rgba(54, 162, 235, 0.6)",
+          "rgba(255, 205, 86, 0.6)"
+        ]
+      }
+    ]
+  },
+  "principais_noticias": [
+    "OMS alerta para aumento de casos de gripe",
+    "Telemedicina ganha espaço no atendimento primário",
+    "Laboratório X lança novo medicamento para diabetes"
+  ],
+  "metricas": {
+    "total_acoes": 8,
+    "setores_analisados": 8,
+    "noticias_processadas": 18
+  },
+  "sectors": {
+    "global_market": {
+      "name": "Análise Global do Mercado",
+      "icon": "🌍",
+      "count": 2,
+      "description": "Principais desenvolvimentos em análise global do mercado",
+      "news": [
+        {
+          "titulo": "OMS alerta para aumento de casos de gripe",
+          "link": "https://www.reuters.com/business/healthcare-pharmaceuticals/oms-alerta-para-aumento-de-casos-de-gripe",
+          "resumo": "A Organização Mundial da Saúde (OMS) divulgou um alerta sobre o aumento de casos de gripe em diversos países."
+        },
+        {
+          "titulo": "Mercado global de saúde deve crescer X% em 2024",
+          "link": "https://www.businesswire.com/newsroom/industry/health/mercado-global-de-saude-deve-crescer-x-em-2024",
+          "resumo": "Previsões apontam um crescimento significativo no mercado global de saúde para o próximo ano, impulsionado por fatores como envelhecimento da população e aumento de doenças crônicas."
+        }
+      ]
+    },
+    "global_trends": {
+      "name": "Tendências Globais em Saúde",
+      "icon": "��",
+      "count": 2,
+      "description": "Principais desenvolvimentos em tendências globais em saúde",
+      "news": [
+        {
+          "titulo": "Telemedicina ganha espaço no atendimento primário",
+          "link": "https://www.medicalfuturist.com/telemedicina-ganha-espaco-no-atendimento-primario/",
+          "resumo": "A telemedicina tem demonstrado crescimento como ferramenta para acesso à saúde, principalmente em regiões remotas."
+        },
+        {
+          "titulo": "Aumento da demanda por profissionais de saúde mental",
+          "link": "https://www.reuters.com/business/healthcare-pharmaceuticals/aumento-da-demanda-por-profissionais-de-saude-mental",
+          "resumo": "A crescente conscientização sobre a saúde mental tem impulsionado a demanda por profissionais especializados na área."
+        }
+      ]
+    },
+    "big_pharma": {
+      "name": "Big Pharma",
+      "icon": "💊",
+      "count": 2,
+      "description": "Principais desenvolvimentos em big pharma",
+      "news": [
+        {
+          "titulo": "Laboratório X lança novo medicamento para diabetes",
+          "link": "https://www.businesswire.com/newsroom/industry/health/laboratorio-x-lanca-novo-medicamento-para-diabetes",
+          "resumo": "Um grande laboratório farmacêutico anuncia o lançamento de um novo medicamento para o tratamento de diabetes."
+        },
+        {
+          "titulo": "Resultados positivos de estudo clínico de medicamento para câncer",
+          "link": "https://www.reuters.com/business/healthcare-pharmaceuticals/resultados-positivos-de-estudo-clinico-de-medicamento-para-cancer",
+          "resumo": "Um estudo clínico mostra resultados promissores para um novo medicamento no tratamento de um tipo específico de câncer."
+        }
+      ]
+    },
+    "orthopedics": {
+      "name": "Ortopedia e Dispositivos Médicos",
+      "icon": "��",
+      "count": 3,
+      "description": "Principais desenvolvimentos em ortopedia e dispositivos médicos",
+      "news": [
+        {
+          "titulo": "Nova prótese de joelho com tecnologia avançada",
+          "link": "https://orthofeed.com/nova-protese-de-joelho-com-tecnologia-avancada",
+          "resumo": "Empresa lança nova prótese de joelho com design inovador e materiais de alta performance."
+        },
+        {
+          "titulo": "Avanços em cirurgia robótica para ortopedia",
+          "link": "https://www.massdevice.com/avancos-em-cirurgia-robotica-para-ortopedia",
+          "resumo": "A cirurgia robótica está se tornando cada vez mais presente em procedimentos ortopédicos."
+        },
+        {
+          "titulo": "Estudo aponta eficácia de novo tratamento para artrite",
+          "link": "https://orthobuzz.jbjs.org/estudo-aponta-eficacia-de-novo-tratamento-para-artrite",
+          "resumo": "Pesquisa mostra resultados positivos de um novo tratamento para artrite, com redução significativa de sintomas."
+        }
+      ]
+    },
+    "ai_health": {
+      "name": "IA em Saúde",
+      "icon": "🤖",
+      "count": 2,
+      "description": "Principais desenvolvimentos em ia em saúde",
+      "news": [
+        {
+          "titulo": "IA ajuda a diagnosticar doenças com maior precisão",
+          "link": "https://www.medicalfuturist.com/ia-ajuda-a-diagnosticar-doencas-com-maior-precisao",
+          "resumo": "Inteligência artificial está sendo usada para auxiliar médicos no diagnóstico de doenças."
+        },
+        {
+          "titulo": "Plataforma de IA para monitoramento remoto de pacientes",
+          "link": "https://www.massdevice.com/plataforma-de-ia-para-monitoramento-remoto-de-pacientes",
+          "resumo": "Nova plataforma utiliza IA para monitorar pacientes remotamente, melhorando a eficiência do atendimento."
+        }
+      ]
+    },
+    "brazil_health": {
+      "name": "Cenário Brasileiro de Saúde",
+      "icon": "��🇷",
+      "count": 2,
+      "description": "Principais desenvolvimentos em cenário brasileiro de saúde",
+      "news": [
+        {
+          "titulo": "Governo anuncia novos investimentos em saúde pública",
+          "link": "https://braziljournal.com/hot-topic/health-journal/governo-anuncia-novos-investimentos-em-saude-publica",
+          "resumo": "O governo brasileiro anuncia um pacote de investimentos para melhorar a infraestrutura e os serviços de saúde pública."
+        },
+        {
+          "titulo": "Debate sobre a regulamentação de telemedicina no Brasil",
+          "link": "https://braziljournal.com/hot-topic/health-journal/debate-sobre-a-regulamentacao-de-telemedicina-no-brasil",
+          "resumo": "Discute-se a necessidade de uma regulamentação mais clara para a prática da telemedicina no país."
+        }
+      ]
+    },
+    "medtech_innovation": {
+      "name": "Inovação em MedTech",
+      "icon": "��",
+      "count": 2,
+      "description": "Principais desenvolvimentos em inovação em medtech",
+      "news": [
+        {
+          "titulo": "Novo dispositivo para monitoramento cardíaco",
+          "link": "https://www.mddionline.com/novo-dispositivo-para-monitoramento-cardiaco",
+          "resumo": "Empresa lança um novo dispositivo médico para monitoramento cardíaco com maior precisão e menor invasividade."
+        },
+        {
+          "titulo": "Impressora 3D para criação de próteses personalizadas",
+          "link": "https://www.bioworld.com/impressora-3d-para-criacao-de-proteses-personalizadas",
+          "resumo": "Tecnologia de impressão 3D permite a criação de próteses personalizadas e mais confortáveis para os pacientes."
+        }
+      ]
+    },
+    "healthtech_startups": {
+      "name": "Startups de HealthTech",
+      "icon": "🚀",
+      "count": 3,
+      "description": "Principais desenvolvimentos em startups de healthtech",
+      "news": [
+        {
+          "titulo": "Startup desenvolve aplicativo para gerenciamento de medicamentos",
+          "link": "https://techcrunch.com/startup-desenvolve-aplicativo-para-gerenciamento-de-medicamentos",
+          "resumo": "Uma startup lança um aplicativo que auxilia pacientes no gerenciamento de seus medicamentos."
+        },
+        {
+          "titulo": "Plataforma online conecta pacientes a profissionais de saúde",
+          "link": "https://techcrunch.com/plataforma-online-conecta-pacientes-a-profissionais-de-saude",
+          "resumo": "Nova plataforma online facilita o acesso a profissionais de saúde, agilizando o processo de agendamento de consultas."
+        },
+        {
+          "titulo": "Startup recebe investimento para desenvolver tecnologia de diagnóstico precoce",
+          "link": "https://techcrunch.com/startup-recebe-investimento-para-desenvolver-tecnologia-de-diagnostico-precoce",
+          "resumo": "Startup focada em diagnóstico precoce de doenças recebe um significativo investimento para expandir seus negócios."
+        }
+      ]
+    }
+  },
+  "message": "Dados de gráficos integrados com análise da IA",
+  "generated_at": "2025-08-27T15:30:34.497Z",
+  "version": "1.0"
+}
