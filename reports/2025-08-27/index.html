@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIR Health - Market Insight Report on Health</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1a4d4d 0%, #2d7a7a 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            width: 100px;
+            height: 100px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+        }
+        
+        .header-text h1 {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .header-text .subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+        
+        .header .date {
+            text-align: center;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .executive-summary {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-left: 5px solid #1a4d4d;
+        }
+        
+        .executive-summary h2 {
+            color: #1a4d4d;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        .sentiment-indicator {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .trends-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .trend-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #1a4d4d;
+        }
+        
+        .sectors-container {
+            display: grid;
+            gap: 30px;
+        }
+        
+        .sector-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .sector-section:hover {
+            transform: translateY(-5px);
+        }
+        
+        .sector-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .sector-icon {
+            font-size: 3em;
+            width: 80px;
+            text-align: center;
+        }
+        
+        .sector-info h2 {
+            color: #1a4d4d;
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+        
+        .sector-description {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        .sector-count {
+            margin-left: auto;
+            background: #1a4d4d;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        
+        .news-grid {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .news-item {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            border-left: 4px solid #1a4d4d;
+            transition: all 0.3s ease;
+        }
+        
+        .news-item:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+        
+        .news-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .news-number {
+            background: #1a4d4d;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        .news-title {
+            color: #1a4d4d;
+            font-size: 1.1em;
+            font-weight: 600;
+            flex: 1;
+        }
+        
+        .news-link {
+            display: inline-block;
+            color: #2d7a7a;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        
+        .news-link:hover {
+            color: #1a4d4d;
+            text-decoration: underline;
+        }
+        
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            margin-top: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .footer h3 {
+            color: #1a4d4d;
+            margin-bottom: 15px;
+        }
+        
+        .footer .copyright {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #888;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content { flex-direction: column; text-align: center; }
+            .header-text h1 { font-size: 2em; }
+            .sector-header { flex-direction: column; text-align: center; }
+            .sector-count { margin-left: 0; }
+            .news-header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <div class="logo">🏥</div>
+                <div class="header-text">
+                    <h1>MIR HEALTH</h1>
+                    <div class="subtitle">Market Insight Report on Health</div>
+                </div>
+            </div>
+            <div class="date">sábado, 23 de agosto de 2025</div>
+        </div>
+        
+        <div class="executive-summary">
+            <h2>📊 Resumo Executivo</h2>
+            <div class="sentiment-indicator">
+                Sentimento: Neutro
+            </div>
+            <p>Análise abrangente do mercado de saúde com foco em tendências globais, inovação tecnológica e desenvolvimentos setoriais.</p>
+            
+            
+            <div class="trends-grid">
+                
+                    <div class="trend-item">
+                        <strong>📈</strong> Aumento de investimentos em IA na saúde
+                    </div>
+                
+                    <div class="trend-item">
+                        <strong>📈</strong> Crescimento do mercado de dispositivos médicos
+                    </div>
+                
+                    <div class="trend-item">
+                        <strong>📈</strong> Regulamentação crescente de HealthTechs
+                    </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="sectors-container">
+            
+                <div class="sector-section" id="sector-global_market">
+                    <div class="sector-header">
+                        <div class="sector-icon">🌍</div>
+                        <div class="sector-info">
+                            <h2>Análise Global do Mercado</h2>
+                            <p class="sector-description">Principais desenvolvimentos em análise global do mercado</p>
+                        </div>
+                        <div class="sector-count">2 notícias</div>
+                    </div>
+                    <div class="news-grid">
+                        
+                            <div class="news-item">
+                                <div class="news-header">
+                                    <span class="news-number">1</span>
+                                    <h4 class="news-title">OMS alerta para aumento de casos de gripe</h4>
+                                </div>
+                                <p>A Organização Mundial da Saúde (OMS) divulgou um alerta sobre o aumento de casos de gripe em diversos países.</p>
+                                <a href="https://www.reuters.com/business/healthcare-pharmaceuticals/oms-alerta-para-aumento-de-casos-de-gripe" target="_blank" class="news-link">🔗 Ler notícia completa</a>
+                                <div class="news-meta">
+                                    <span class="news-source">Fonte</span>
+                                    <span class="news-time">quarta-feira, 27 de agosto de 2025</span>
+                                </div>
+                            </div>
+                        
+                            <div class="news-item">
+                                <div class="news-header">
+                                    <span class="news-number">2</span>
+                                    <h4 class="news-title">Mercado global de saúde deve crescer X% em 2024</h4>
+                                </div>
+                                <p>Previsões apontam um crescimento significativo no mercado global de saúde para o próximo ano, impulsionado por fatores como envelhecimento da população e aumento de doenças crônicas.</p>
+                                <a href="https://www.businesswire.com/newsroom/industry/health/mercado-global-de-saude-deve-crescer-x-em-2024" target="_blank" class="news-link">🔗 Ler notícia completa</a>
+                                <div class="news-meta">
+                                    <span class="news-source">Fonte</span>
+                                    <span class="news-time">quarta-feira, 27 de agosto de 2025</span>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            
+                <div class="sector-section" id="sector-global_trends">
+                    <div class="sector-header">
+                        <div class="sector-icon">��</div>
+                        <div class="sector-info">
+                            <h2>Tendências Globais em Saúde</h2>
+                            <p class="sector-description">Principais desenvolvimentos em tendências globais em saúde</p>
+                        </div>
+                        <div class="sector-count">2 notícias</div>
+                    </div>
+                    <div class="news-grid">
+                        
+                            <div class="news-item">
+                                <div class="news-header">
+                                    <span class="news-number">1</span>
+                                    <h4 class="news-title">Telemedicina ganha espaço no atendimento primário</h4>
+                                </div>
+                                <p>A telemedicina tem demonstrado crescimento como ferramenta para acesso à saúde, principalmente em regiões remotas.</p>
+                                <a href="https://www.medicalfuturist.com/telemedicina-ganha-espaco-no-atendimento-primario/" target="_blank" class="news-link">🔗 Ler notícia completa</a>
+                                <div class="news-meta">
+                                    <span class="news-source">Fonte</span>
+                                    <span class="news-time">quarta-feira, 27 de agosto de 2025</span>
+                                </div>
+                            </div>
+                        
+                            <div class="news-item">
+                                <div class="news-header">
+                                    <span class="news-number">2</span>
+                                    <h4 class="news-title">Aumento da demanda por profissionais de saúde mental</h4>
+                                </div>
+                                <p>A crescente conscientização sobre a saúde mental tem impulsionado a demanda por profissionais especializados na área.</p>
+                                <a href="https://www.reuters.com/business/healthcare-pharmaceuticals/aumento-da-demanda-por-profissionais-de-saude-mental" target="_blank" class="news-link">🔗 Ler notícia completa</a>
+                                <div class="news-meta">
+                                    <span class="news-source">Fonte</span>
+                                    <span class="news-time">quarta-feira, 27 de agosto de 2025</span>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            
+                <div class="sector-section" id="sector-big_pharma">
+                    <div class="sector-header">
+                        <div class="sector-icon">💊</div>
+                        <div class="sector-info">
+                            <h2>Big Pharma</h2>
+                            <p class="sector-description">Principais desenvolvimentos em big pharma</p>
+                        </div>
+                        <div class="sector-count">2 notícias</div>
+                    </div>
+                    <div class="news-grid">
+                        
+                            <div class="news-item">
+                                <div class="news-header">
+                                    <span class="news-number">1</span>
+                                    <h4 class="news-title">Laboratório X lança novo medicamento para diabetes</h4>
+                                </div>
+                                <p>Um grande laboratório farmacêutico anuncia o lançamento de um novo medicamento para o tratamento de diabetes.</p>
+                                <a href="https://www.businesswire.com/newsroom/industry/health/laboratorio-x-lanca-novo-medicamento-para-diabetes" target="_blank" class="news-link">🔗 Ler notícia completa</a>
+                                <div class="news-meta">
+                                    <span class="news-source">Fonte</span>
+                                    <span class="news-time">quarta-feira, 27 de agosto de 2025</span>
+                                </div>
+                            </div>
+                        
+                            <div class="news-item">
+                                <div class="news-header">
+                                    <span class="news-number">2</span>
+                                    <h4 class="news-title">Resultados positivos de estudo clínico de medicamento para câncer</h4>
+                                </div>
+                                <p>Um estudo clínico mostra resultados promissores para um novo medicamento no tratamento de um tipo específico de câncer.</p>
+                                <a href="https://www.reuters.com/business/healthcare-pharmaceuticals/resultados-positivos-de-estudo-clinico-de-medicamento-para-cancer" target="_blank" class="news-link">🔗 Ler notícia completa</a>
+                                <div class="news-meta">
+                                    <span class="news-source">Fonte</span>
+                                    <span class="news-time">quarta-feira, 27 de agosto de 2025</span>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            
+                <div class="sector-section" id="sector-orthopedics">
+                    <div class="sector-header">
+                        <div class="sector-icon">��</div>
+                        <div class="sector-info">
+                            <h2>Ortopedia e Dispositivos Médicos</h2>
+                            <p class="sector-description">Principais desenvolvimentos em ortopedia e dispositivos médicos</p>
+                        </div>
+                        <div class="sector-count">3 notícias</div>
+                    </div>
+                    <div class="news-grid">
+                        
+                            <div class="news-item">
+                                <div class="news-header">
+                                    <span class="news-number">1</span>
+                                    <h4 class="news-title">Nova prótese de joelho com tecnologia avançada</h4>
+                                </div>
+                                <p>Empresa lança nova prótese de joelho com design inovador e materiais de alta performance.</p>
+                                <a href="https://orthofeed.com/nova-protese-de-joelho-com-tecnologia-avancada" target="_blank" class="news-link">🔗 Ler notícia completa</a>
+                                <div class="news-meta">
+                                    <span class="news-source">Fonte</span>
+                                    <span class="news-time">quarta-feira, 27 de agosto de 2025</span>
+                                </div>
+                            </div>
+                        
+                            <div class="news-item">
+                                <div class="news-header">
+                                    <span class="news-number">2</span>
+                                    <h4 class="news-title">Avanços em cirurgia robótica para ortopedia</h4>
+                                </div>
+                                <p>A cirurgia robótica está se tornando cada vez mais presente em procedimentos ortopédicos.</p>
+                                <a href="https://www.massdevice.com/avancos-em-cirurgia-robotica-para-ortopedia" target="_blank" class="news-link">🔗 Ler notícia completa</a>
+                                <div class="news-meta">
+                                    <span class="news-source">Fonte</span>
+                                    <span class="news-time">quarta-feira, 27 de agosto de 2025</span>
+                                </div>
+                            </div>
+                        
+                            <div class="news-item">
+                                <div class="news-header">
+                                    <span class="news-number">3</span>
+                                    <h4 class="news-title">Estudo aponta eficácia de novo tratamento para artrite</h4>
+                                </div>
+                                <p>Pesquisa mostra resultados positivos de um novo tratamento para artrite, com redução significativa de sintomas.</p>
+                                <a href="https://orthobuzz.jbjs.org/estudo-aponta-eficacia-de-novo-tratamento-para-artrite" target="_blank" class="news-link">🔗 Ler notícia completa</a>
+                                <div class="news-meta">
+                                    <span class="news-source">Fonte</span>
+                                    <span class="news-time">quarta-feira, 27 de agosto de 2025</span>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            
+                <div class="sector-section" id="sector-ai_health">
+                    <div class="sector-header">
+                        <div class="sector-icon">🤖</div>
+                        <div class="sector-info">
+                            <h2>IA em Saúde</h2>
+                            <p class="sector-description">Principais desenvolvimentos em ia em saúde</p>
+                        </div>
+                        <div class="sector-count">2 notícias</div>
+                    </div>
+                    <div class="news-grid">
+                        
+                            <div class="news-item">
+                                <div class="news-header">
+                                    <span class="news-number">1</span>
+                                    <h4 class="news-title">IA ajuda a diagnosticar doenças com maior precisão</h4>
+                                </div>
+                                <p>Inteligência artificial está sendo usada para auxiliar médicos no diagnóstico de doenças.</p>
+                                <a href="https://www.medicalfuturist.com/ia-ajuda-a-diagnosticar-doencas-com-maior-precisao" target="_blank" class="news-link">🔗 Ler notícia completa</a>
+                                <div class="news-meta">
+                                    <span class="news-source">Fonte</span>
+                                    <span class="news-time">quarta-feira, 27 de agosto de 2025</span>
+                                </div>
+                            </div>
+                        
+                            <div class="news-item">
+                                <div class="news-header">
+                                    <span class="news-number">2</span>
+                                    <h4 class="news-title">Plataforma de IA para monitoramento remoto de pacientes</h4>
+                                </div>
+                                <p>Nova plataforma utiliza IA para monitorar pacientes remotamente, melhorando a eficiência do atendimento.</p>
+                                <a href="https://www.massdevice.com/plataforma-de-ia-para-monitoramento-remoto-de-pacientes" target="_blank" class="news-link">🔗 Ler notícia completa</a>
+                                <div class="news-meta">
+                                    <span class="news-source">Fonte</span>
+                                    <span class="news-time">quarta-feira, 27 de agosto de 2025</span>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            
+                <div class="sector-section" id="sector-brazil_health">
+                    <div class="sector-header">
+                        <div class="sector-icon">��🇷</div>
+                        <div class="sector-info">
+                            <h2>Cenário Brasileiro de Saúde</h2>
+                            <p class="sector-description">Principais desenvolvimentos em cenário brasileiro de saúde</p>
+                        </div>
+                        <div class="sector-count">2 notícias</div>
+                    </div>
+                    <div class="news-grid">
+                        
+                            <div class="news-item">
+                                <div class="news-header">
+                                    <span class="news-number">1</span>
+                                    <h4 class="news-title">Governo anuncia novos investimentos em saúde pública</h4>
+                                </div>
+                                <p>O governo brasileiro anuncia um pacote de investimentos para melhorar a infraestrutura e os serviços de saúde pública.</p>
+                                <a href="https://braziljournal.com/hot-topic/health-journal/governo-anuncia-novos-investimentos-em-saude-publica" target="_blank" class="news-link">🔗 Ler notícia completa</a>
+                                <div class="news-meta">
+                                    <span class="news-source">Fonte</span>
+                                    <span class="news-time">quarta-feira, 27 de agosto de 2025</span>
+                                </div>
+                            </div>
+                        
+                            <div class="news-item">
+                                <div class="news-header">
+                                    <span class="news-number">2</span>
+                                    <h4 class="news-title">Debate sobre a regulamentação de telemedicina no Brasil</h4>
+                                </div>
+                                <p>Discute-se a necessidade de uma regulamentação mais clara para a prática da telemedicina no país.</p>
+                                <a href="https://braziljournal.com/hot-topic/health-journal/debate-sobre-a-regulamentacao-de-telemedicina-no-brasil" target="_blank" class="news-link">🔗 Ler notícia completa</a>
+                                <div class="news-meta">
+                                    <span class="news-source">Fonte</span>
+                                    <span class="news-time">quarta-feira, 27 de agosto de 2025</span>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            
+                <div class="sector-section" id="sector-medtech_innovation">
+                    <div class="sector-header">
+                        <div class="sector-icon">��</div>
+                        <div class="sector-info">
+                            <h2>Inovação em MedTech</h2>
+                            <p class="sector-description">Principais desenvolvimentos em inovação em medtech</p>
+                        </div>
+                        <div class="sector-count">2 notícias</div>
+                    </div>
+                    <div class="news-grid">
+                        
+                            <div class="news-item">
+                                <div class="news-header">
+                                    <span class="news-number">1</span>
+                                    <h4 class="news-title">Novo dispositivo para monitoramento cardíaco</h4>
+                                </div>
+                                <p>Empresa lança um novo dispositivo médico para monitoramento cardíaco com maior precisão e menor invasividade.</p>
+                                <a href="https://www.mddionline.com/novo-dispositivo-para-monitoramento-cardiaco" target="_blank" class="news-link">🔗 Ler notícia completa</a>
+                                <div class="news-meta">
+                                    <span class="news-source">Fonte</span>
+                                    <span class="news-time">quarta-feira, 27 de agosto de 2025</span>
+                                </div>
+                            </div>
+                        
+                            <div class="news-item">
+                                <div class="news-header">
+                                    <span class="news-number">2</span>
+                                    <h4 class="news-title">Impressora 3D para criação de próteses personalizadas</h4>
+                                </div>
+                                <p>Tecnologia de impressão 3D permite a criação de próteses personalizadas e mais confortáveis para os pacientes.</p>
+                                <a href="https://www.bioworld.com/impressora-3d-para-criacao-de-proteses-personalizadas" target="_blank" class="news-link">🔗 Ler notícia completa</a>
+                                <div class="news-meta">
+                                    <span class="news-source">Fonte</span>
+                                    <span class="news-time">quarta-feira, 27 de agosto de 2025</span>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            
+                <div class="sector-section" id="sector-healthtech_startups">
+                    <div class="sector-header">
+                        <div class="sector-icon">🚀</div>
+                        <div class="sector-info">
+                            <h2>Startups de HealthTech</h2>
+                            <p class="sector-description">Principais desenvolvimentos em startups de healthtech</p>
+                        </div>
+                        <div class="sector-count">3 notícias</div>
+                    </div>
+                    <div class="news-grid">
+                        
+                            <div class="news-item">
+                                <div class="news-header">
+                                    <span class="news-number">1</span>
+                                    <h4 class="news-title">Startup desenvolve aplicativo para gerenciamento de medicamentos</h4>
+                                </div>
+                                <p>Uma startup lança um aplicativo que auxilia pacientes no gerenciamento de seus medicamentos.</p>
+                                <a href="https://techcrunch.com/startup-desenvolve-aplicativo-para-gerenciamento-de-medicamentos" target="_blank" class="news-link">🔗 Ler notícia completa</a>
+                                <div class="news-meta">
+                                    <span class="news-source">Fonte</span>
+                                    <span class="news-time">quarta-feira, 27 de agosto de 2025</span>
+                                </div>
+                            </div>
+                        
+                            <div class="news-item">
+                                <div class="news-header">
+                                    <span class="news-number">2</span>
+                                    <h4 class="news-title">Plataforma online conecta pacientes a profissionais de saúde</h4>
+                                </div>
+                                <p>Nova plataforma online facilita o acesso a profissionais de saúde, agilizando o processo de agendamento de consultas.</p>
+                                <a href="https://techcrunch.com/plataforma-online-conecta-pacientes-a-profissionais-de-saude" target="_blank" class="news-link">🔗 Ler notícia completa</a>
+                                <div class="news-meta">
+                                    <span class="news-source">Fonte</span>
+                                    <span class="news-time">quarta-feira, 27 de agosto de 2025</span>
+                                </div>
+                            </div>
+                        
+                            <div class="news-item">
+                                <div class="news-header">
+                                    <span class="news-number">3</span>
+                                    <h4 class="news-title">Startup recebe investimento para desenvolver tecnologia de diagnóstico precoce</h4>
+                                </div>
+                                <p>Startup focada em diagnóstico precoce de doenças recebe um significativo investimento para expandir seus negócios.</p>
+                                <a href="https://techcrunch.com/startup-recebe-investimento-para-desenvolver-tecnologia-de-diagnostico-precoce" target="_blank" class="news-link">🔗 Ler notícia completa</a>
+                                <div class="news-meta">
+                                    <span class="news-source">Fonte</span>
+                                    <span class="news-time">quarta-feira, 27 de agosto de 2025</span>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            
+        </div>
+        
+        <div class="footer">
+            <h3>MIR Health - Market Insight Report on Health</h3>
+            <p>Relatório gerado automaticamente pelo sistema de análise de mercado</p>
+            <p>Dados baseados em análise de IA e fontes confiáveis do setor de saúde</p>
+            <div class="copyright">
+                © 2025 MIR Health®. Todos os direitos reservados.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
