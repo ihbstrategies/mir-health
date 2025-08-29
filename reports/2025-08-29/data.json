@@ -1,0 +1,792 @@
+{
+  "sectors": {
+    "global_market": {
+      "name": "Análise Global do Mercado",
+      "icon": "🌍",
+      "count": 2,
+      "description": "Principais desenvolvimentos em análise global do mercado",
+      "news": [
+        {
+          "titulo": "OMS alerta para aumento de casos de gripe em países do hemisfério norte.",
+          "link": "https://www.reuters.com/business/healthcare-pharmaceuticals/",
+          "resumo": "A Organização Mundial da Saúde (OMS) divulgou um alerta sobre o aumento de casos de gripe em diversos países do hemisfério norte, impactando o mercado de saúde."
+        },
+        {
+          "titulo": "Relatório da McKinsey aponta crescimento do mercado de saúde global.",
+          "link": "https://www.mckinsey.com/",
+          "resumo": "Um relatório recente da McKinsey prevê um crescimento significativo do mercado global de saúde nos próximos anos, impulsionado por fatores como o envelhecimento da população e o aumento da renda."
+        }
+      ]
+    },
+    "global_trends": {
+      "name": "Tendências Globais em Saúde",
+      "icon": "��",
+      "count": 2,
+      "description": "Principais desenvolvimentos em tendências globais em saúde",
+      "news": [
+        {
+          "titulo": "Telemedicina ganha força como alternativa ao atendimento presencial.",
+          "link": "https://www.reuters.com/business/healthcare-pharmaceuticals/",
+          "resumo": "A telemedicina continua a crescer em popularidade globalmente, oferecendo acesso a cuidados de saúde remotos e convenientes."
+        },
+        {
+          "titulo": "Investimento em pesquisa e desenvolvimento de novas terapias aumenta.",
+          "link": "https://www.businesswire.com/newsroom/industry/health",
+          "resumo": "As empresas farmacêuticas estão investindo fortemente em P&D, buscando desenvolver novas terapias para doenças crônicas e raras."
+        }
+      ]
+    },
+    "big_pharma": {
+      "name": "Big Pharma",
+      "icon": "💊",
+      "count": 2,
+      "description": "Principais desenvolvimentos em big pharma",
+      "news": [
+        {
+          "titulo": "Pfizer anuncia resultados positivos em teste de nova droga para Alzheimer.",
+          "link": "https://www.reuters.com/business/healthcare-pharmaceuticals/",
+          "resumo": "A Pfizer divulgou dados promissores de um ensaio clínico de uma nova droga para o tratamento do Alzheimer."
+        },
+        {
+          "titulo": "Novo medicamento para diabetes tipo 2 da Novo Nordisk obtém aprovação nos EUA.",
+          "link": "https://www.businesswire.com/newsroom/industry/health",
+          "resumo": "A Novo Nordisk recebeu aprovação regulatória para um novo medicamento para diabetes tipo 2 nos Estados Unidos."
+        }
+      ]
+    },
+    "orthopedics": {
+      "name": "Ortopedia e Dispositivos Médicos",
+      "icon": "��",
+      "count": 3,
+      "description": "Principais desenvolvimentos em ortopedia e dispositivos médicos",
+      "news": [
+        {
+          "titulo": "Zimmer Biomet lança novo implante de joelho.",
+          "link": "https://orthofeed.com/",
+          "resumo": "A Zimmer Biomet anunciou o lançamento de um novo implante de joelho com tecnologia avançada."
+        },
+        {
+          "titulo": "Stryker anuncia resultados financeiros positivos no segundo trimestre.",
+          "link": "https://www.massdevice.com/",
+          "resumo": "A Stryker reportou resultados financeiros sólidos no segundo trimestre de 2025, impulsionados pela forte demanda por seus produtos."
+        },
+        {
+          "titulo": "Estudo mostra eficácia de novo tratamento para artrite reumatoide.",
+          "link": "https://orthobuzz.jbjs.org/",
+          "resumo": "Um estudo recente publicado no JBJS demonstrou a eficácia de um novo tratamento para artrite reumatoide."
+        }
+      ]
+    },
+    "ai_health": {
+      "name": "IA em Saúde",
+      "icon": "🤖",
+      "count": 2,
+      "description": "Principais desenvolvimentos em ia em saúde",
+      "news": [
+        {
+          "titulo": "Nova plataforma de IA para diagnóstico de imagens médicas é lançada.",
+          "link": "https://medicalfuturist.com/",
+          "resumo": "Uma nova plataforma de inteligência artificial para auxiliar no diagnóstico de imagens médicas foi lançada, prometendo maior precisão e eficiência."
+        },
+        {
+          "titulo": "Google Health anuncia parceria com hospital para testar IA em tratamento de câncer.",
+          "link": "https://www.reuters.com/business/healthcare-pharmaceuticals/",
+          "resumo": "O Google Health anunciou uma parceria com um grande hospital para testar o uso de inteligência artificial no tratamento de câncer."
+        }
+      ]
+    },
+    "brazil_health": {
+      "name": "Cenário Brasileiro de Saúde",
+      "icon": "��🇷",
+      "count": 2,
+      "description": "Principais desenvolvimentos em cenário brasileiro de saúde",
+      "news": [
+        {
+          "titulo": "Governo brasileiro anuncia investimentos em infraestrutura hospitalar.",
+          "link": "https://braziljournal.com/hot-topic/health-journal/",
+          "resumo": "O governo brasileiro anunciou planos para investir em infraestrutura hospitalar em todo o país."
+        },
+        {
+          "titulo": "Rede D'Or São Luiz registra crescimento nos lucros do segundo trimestre.",
+          "link": "https://braziljournal.com/hot-topic/empresas-de-saude/",
+          "resumo": "A Rede D'Or São Luiz reportou um crescimento significativo em seus lucros no segundo trimestre de 2025."
+        }
+      ]
+    },
+    "medtech_innovation": {
+      "name": "Inovação em MedTech",
+      "icon": "��",
+      "count": 2,
+      "description": "Principais desenvolvimentos em inovação em medtech",
+      "news": [
+        {
+          "titulo": "Avanços em tecnologia de imagem médica permitem diagnósticos mais precisos.",
+          "link": "https://www.mddionline.com/",
+          "resumo": "Novas tecnologias de imagem médica estão permitindo diagnósticos mais precisos e precoces de diversas doenças."
+        },
+        {
+          "titulo": "Dispositivo médico inovador para tratamento de doenças cardíacas é aprovado.",
+          "link": "https://www.massdevice.com/",
+          "resumo": "Um novo dispositivo médico para o tratamento de doenças cardíacas recebeu aprovação regulatória."
+        }
+      ]
+    },
+    "healthtech_startups": {
+      "name": "Startups de HealthTech",
+      "icon": "🚀",
+      "count": 3,
+      "description": "Principais desenvolvimentos em startups de healthtech",
+      "news": [
+        {
+          "titulo": "Startup brasileira de telemedicina recebe investimento de US$ 10 milhões.",
+          "link": "https://techcrunch.com/tag/health/",
+          "resumo": "Uma startup brasileira de telemedicina recebeu um investimento significativo de US$ 10 milhões."
+        },
+        {
+          "titulo": "Startup americana desenvolve aplicativo para monitoramento de saúde mental.",
+          "link": "https://techcrunch.com/tag/health/",
+          "resumo": "Uma startup americana lançou um aplicativo para monitoramento de saúde mental, utilizando IA para detectar sinais de alerta."
+        },
+        {
+          "titulo": "Nova startup focada em soluções de saúde personalizada atrai investidores.",
+          "link": "https://techcrunch.com/tag/health/",
+          "resumo": "Uma startup que oferece soluções de saúde personalizadas atraiu um grande volume de investimentos."
+        }
+      ]
+    }
+  },
+  "executive_summary": {
+    "sentiment": "Neutro",
+    "trends": [
+      "Aumento da demanda por serviços de saúde",
+      "Avanços na IA aplicada à saúde",
+      "Consolidação no mercado de HealthTech"
+    ],
+    "key_insights": [
+      "Aumento da demanda por serviços de saúde",
+      "Avanços na IA aplicada à saúde",
+      "Consolidação no mercado de HealthTech"
+    ]
+  },
+  "market_data": {
+    "acoes": [
+      {
+        "empresa": "Diagnósticos da América S.A.",
+        "ticker": "DASA3.SA",
+        "preco_atual": "1.37",
+        "variacao_diaria": "1.48%"
+      },
+      {
+        "empresa": "Fleury S.A.",
+        "ticker": "FLRY3.SA",
+        "preco_atual": "14.59",
+        "variacao_diaria": "1.74%"
+      },
+      {
+        "empresa": "Hapvida Participações e Investimentos S.A.",
+        "ticker": "HAPV3.SA",
+        "preco_atual": "40.62",
+        "variacao_diaria": "2.06%"
+      },
+      {
+        "empresa": "Oncoclínicas do Brasil Serviços Médicos S.A.",
+        "ticker": "ONCO3.SA",
+        "preco_atual": "2.90",
+        "variacao_diaria": "0.00%"
+      },
+      {
+        "empresa": "Raia Drogasil S.A.",
+        "ticker": "RADL3.SA",
+        "preco_atual": "18.45",
+        "variacao_diaria": "-0.91%"
+      },
+      {
+        "empresa": "Rede D'Or São Luiz S.A.",
+        "ticker": "RDOR3.SA",
+        "preco_atual": "38.68",
+        "variacao_diaria": "1.12%"
+      },
+      {
+        "empresa": "OrthoPediatrics Corp.",
+        "ticker": "KIDS",
+        "preco_atual": "21.03",
+        "variacao_diaria": "-2.77%"
+      },
+      {
+        "empresa": "Globus Medical, Inc.",
+        "ticker": "GMED",
+        "preco_atual": "60.81",
+        "variacao_diaria": "-1.14%"
+      },
+      {
+        "empresa": "Zimmer Biomet Holdings, Inc.",
+        "ticker": "ZBH",
+        "preco_atual": "105.00",
+        "variacao_diaria": "-1.68%"
+      },
+      {
+        "empresa": "Orthofix Medical Inc.",
+        "ticker": "OFIX",
+        "preco_atual": "14.63",
+        "variacao_diaria": "-1.45%"
+      },
+      {
+        "empresa": "Smith & Nephew plc",
+        "ticker": "SNN",
+        "preco_atual": "37.14",
+        "variacao_diaria": "-0.30%"
+      },
+      {
+        "empresa": "Stryker Corporation",
+        "ticker": "SYK",
+        "preco_atual": "389.80",
+        "variacao_diaria": "-0.85%"
+      },
+      {
+        "empresa": "Abbott Laboratories",
+        "ticker": "ABT",
+        "preco_atual": "130.37",
+        "variacao_diaria": "-0.83%"
+      },
+      {
+        "empresa": "Johnson & Johnson",
+        "ticker": "JNJ",
+        "preco_atual": "175.48",
+        "variacao_diaria": "-0.74%"
+      },
+      {
+        "empresa": "Pfizer Inc.",
+        "ticker": "PFE",
+        "preco_atual": "24.79",
+        "variacao_diaria": "-1.14%"
+      },
+      {
+        "empresa": "Eli Lilly and Company",
+        "ticker": "LLY",
+        "preco_atual": "734.55",
+        "variacao_diaria": "0.05%"
+      },
+      {
+        "empresa": "AbbVie Inc.",
+        "ticker": "ABBV",
+        "preco_atual": "207.37",
+        "variacao_diaria": "-0.33%"
+      },
+      {
+        "empresa": "Novartis AG",
+        "ticker": "NVS",
+        "preco_atual": "126.35",
+        "variacao_diaria": "-0.43%"
+      },
+      {
+        "empresa": "AstraZeneca PLC",
+        "ticker": "AZN",
+        "preco_atual": "79.66",
+        "variacao_diaria": "-0.34%"
+      },
+      {
+        "empresa": "Merck & Co., Inc.",
+        "ticker": "MRK",
+        "preco_atual": "83.26",
+        "variacao_diaria": "-0.96%"
+      },
+      {
+        "empresa": "Novo Nordisk A/S",
+        "ticker": "NVO",
+        "preco_atual": "56.41",
+        "variacao_diaria": "-0.06%"
+      },
+      {
+        "empresa": "Boston Scientific Corporation",
+        "ticker": "BSX",
+        "preco_atual": "105.08",
+        "variacao_diaria": "-0.75%"
+      },
+      {
+        "empresa": "Qualicorp Consultoria e Corretora de Seguros S.A.",
+        "ticker": "QUAL3.SA",
+        "preco_atual": "1.88",
+        "variacao_diaria": "1.62%"
+      },
+      {
+        "empresa": "Intuitive Surgical, Inc.",
+        "ticker": "ISRG",
+        "preco_atual": "468.79",
+        "variacao_diaria": "-0.50%"
+      }
+    ],
+    "metricas": {
+      "indice_saude": "Não disponível",
+      "variacao_diaria": "Não disponível"
+    }
+  },
+  "metrics": {
+    "total_news": 18,
+    "total_sectors": 8,
+    "sectors_with_news": 8,
+    "processed_at": "2025-08-28T14:09:09.206Z"
+  },
+  "sources": [
+    "OrthoBuzz (JBJS)",
+    "OrthoFeed",
+    "Mass Devices",
+    "MDDI Online",
+    "BioWorld MedTech",
+    "Reuters Health",
+    "Businesswire Health",
+    "The Medical Futurist",
+    "MedTech Intelligence",
+    "TechCrunch Health",
+    "Brazil Journal Health",
+    "Brazil Journal Empresas",
+    "McKinsey"
+  ],
+  "message": "Processamento concluído: 18 notícias em 8 setores",
+  "data": "2025-08-28",
+  "filename": "MIR_Health_Report_2025-08-28.pdf",
+  "resumo_executivo": {
+    "sentimento_geral": "Positivo",
+    "principais_tendencias": [
+      "Crescimento em HealthTech",
+      "Inovação em IA",
+      "Expansão de telemedicina"
+    ]
+  },
+  "stock_data": {
+    "farmaceuticas": [
+      {
+        "ticker": "JNJ",
+        "nome": "Johnson & Johnson",
+        "preco": 175.48,
+        "variacao": -0.74,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "PFE",
+        "nome": "Pfizer Inc.",
+        "preco": 24.79,
+        "variacao": -1.14,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "LLY",
+        "nome": "Eli Lilly and Company",
+        "preco": 734.55,
+        "variacao": 0.05,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "ABBV",
+        "nome": "AbbVie Inc.",
+        "preco": 207.37,
+        "variacao": -0.33,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "NVS",
+        "nome": "Novartis AG",
+        "preco": 126.35,
+        "variacao": -0.43,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "AZN",
+        "nome": "AstraZeneca PLC",
+        "preco": 79.66,
+        "variacao": -0.34,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "MRK",
+        "nome": "Merck & Co., Inc.",
+        "preco": 83.26,
+        "variacao": -0.96,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "NVO",
+        "nome": "Novo Nordisk A/S",
+        "preco": 56.41,
+        "variacao": -0.06,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      }
+    ],
+    "dispositivos_medicos": [
+      {
+        "ticker": "ABT",
+        "nome": "Abbott Laboratories",
+        "preco": 130.37,
+        "variacao": -0.83,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "BSX",
+        "nome": "Boston Scientific Corporation",
+        "preco": 105.08,
+        "variacao": -0.75,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "ISRG",
+        "nome": "Intuitive Surgical, Inc.",
+        "preco": 468.79,
+        "variacao": -0.5,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      }
+    ],
+    "ortopedia": [
+      {
+        "ticker": "KIDS",
+        "nome": "OrthoPediatrics Corp.",
+        "preco": 21.03,
+        "variacao": -2.77,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "GMED",
+        "nome": "Globus Medical, Inc.",
+        "preco": 60.81,
+        "variacao": -1.14,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "ZBH",
+        "nome": "Zimmer Biomet Holdings, Inc.",
+        "preco": 105,
+        "variacao": -1.68,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "OFIX",
+        "nome": "Orthofix Medical Inc.",
+        "preco": 14.63,
+        "variacao": -1.45,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "SNN",
+        "nome": "Smith & Nephew plc",
+        "preco": 37.14,
+        "variacao": -0.3,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "SYK",
+        "nome": "Stryker Corporation",
+        "preco": 389.8,
+        "variacao": -0.85,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      }
+    ],
+    "acoes_brasileiras": [
+      {
+        "ticker": "DASA3.SA",
+        "nome": "Diagnósticos da América S.A.",
+        "preco": 1.37,
+        "variacao": 1.48,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "FLRY3.SA",
+        "nome": "Fleury S.A.",
+        "preco": 14.59,
+        "variacao": 1.74,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "HAPV3.SA",
+        "nome": "Hapvida Participações e Investimentos S.A.",
+        "preco": 40.62,
+        "variacao": 2.06,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "ONCO3.SA",
+        "nome": "Oncoclínicas do Brasil Serviços Médicos S.A.",
+        "preco": 2.9,
+        "variacao": 0,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "RADL3.SA",
+        "nome": "Raia Drogasil S.A.",
+        "preco": 18.45,
+        "variacao": -0.91,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "RDOR3.SA",
+        "nome": "Rede D'Or São Luiz S.A.",
+        "preco": 38.68,
+        "variacao": 1.12,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      },
+      {
+        "ticker": "QUAL3.SA",
+        "nome": "Qualicorp Consultoria e Corretora de Seguros S.A.",
+        "preco": 1.88,
+        "variacao": 1.62,
+        "volume": 0,
+        "dayHigh": 0,
+        "dayLow": 0,
+        "dayOpen": 0,
+        "previousClose": 0,
+        "change": 0,
+        "currency": "USD",
+        "exchangeName": "Unknown",
+        "lastUpdate": "2025-08-28T14:12:04.135Z"
+      }
+    ]
+  },
+  "trend_data": {
+    "labels": [
+      "Telemedicina",
+      "IA em Saúde",
+      "Dispositivos Wearables",
+      "Biotecnologia",
+      "HealthTech"
+    ],
+    "datasets": [
+      {
+        "label": "Crescimento Esperado (%)",
+        "data": [
+          25,
+          30,
+          20,
+          15,
+          35
+        ],
+        "backgroundColor": [
+          "rgba(54, 162, 235, 0.6)",
+          "rgba(255, 99, 132, 0.6)",
+          "rgba(255, 205, 86, 0.6)",
+          "rgba(75, 192, 192, 0.6)",
+          "rgba(153, 102, 255, 0.6)"
+        ]
+      }
+    ]
+  },
+  "sector_performance": {
+    "labels": [
+      "Farmacêuticas",
+      "Dispositivos Médicos",
+      "Ortopedia",
+      "HealthTech"
+    ],
+    "datasets": [
+      {
+        "label": "Performance Média (%)",
+        "data": [
+          -0.49374999999999997,
+          -0.6933333333333334,
+          -1.365,
+          2.5
+        ],
+        "backgroundColor": [
+          "rgba(255, 99, 132, 0.6)",
+          "rgba(54, 162, 235, 0.6)",
+          "rgba(255, 205, 86, 0.6)",
+          "rgba(75, 192, 192, 0.6)"
+        ]
+      }
+    ]
+  },
+  "principais_noticias": [
+    "HealthTech startup Zyon recebeu investimento de série B liderado pela Sequoia Capital",
+    "Novo dispositivo de monitoramento de glicose lançado por MicroDevice Tech",
+    "Aprovação de um novo marcapasso cardíaco sem fio pela FDA",
+    "Desenvolvimento de novo software de diagnóstico de retina usando AI pela Retina.AI",
+    "Colaboração entre IBM Watson Health e Cleveland Clinic para melhorar diagnósticos"
+  ],
+  "metricas": {
+    "total_acoes": 24,
+    "setores_analisados": 4,
+    "noticias_processadas": 7
+  },
+  "generated_at": "2025-08-29T15:12:34.424Z",
+  "version": "1.0"
+}
