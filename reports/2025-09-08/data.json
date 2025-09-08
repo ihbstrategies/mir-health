@@ -1,0 +1,377 @@
+{
+  "sectors": {
+    "global_market": {
+      "name": "Análise Global do Mercado",
+      "icon": "🌍",
+      "count": 2,
+      "description": "Principais desenvolvimentos em análise global do mercado",
+      "news": [
+        {
+          "titulo": "OMS alerta para aumento de casos de X",
+          "link": "https://www.example.com/oms-alerta-x",
+          "resumo": "A Organização Mundial da Saúde emitiu um alerta sobre o aumento de casos da doença X, impactando o mercado farmacêutico."
+        },
+        {
+          "titulo": "Nova política de saúde aprovada na União Europeia",
+          "link": "https://www.example.com/ue-nova-politica",
+          "resumo": "A União Europeia aprovou uma nova política de saúde que deve afetar o acesso a medicamentos e dispositivos médicos."
+        }
+      ]
+    },
+    "global_trends": {
+      "name": "Tendências Globais em Saúde",
+      "icon": "��",
+      "count": 2,
+      "description": "Principais desenvolvimentos em tendências globais em saúde",
+      "news": [
+        {
+          "titulo": "Resultados positivos de ensaio clínico para tratamento de Y",
+          "link": "https://www.example.com/ensaio-clinico-y",
+          "resumo": "Ensaio clínico demonstra eficácia de novo tratamento para a doença Y, impulsionando ações de empresas do setor."
+        },
+        {
+          "titulo": "Gigante farmacêutica adquire startup de biotecnologia",
+          "link": "https://www.example.com/fusao-farmaceutica",
+          "resumo": "A empresa farmacêutica Z adquiriu a startup de biotecnologia W, consolidando sua posição no mercado."
+        }
+      ]
+    },
+    "big_pharma": {
+      "name": "Big Pharma",
+      "icon": "💊",
+      "count": 3,
+      "description": "Principais desenvolvimentos em big pharma",
+      "news": [
+        {
+          "titulo": "Pfizer anuncia resultados financeiros do terceiro trimestre",
+          "link": "https://www.example.com/pfizer-resultados",
+          "resumo": "A Pfizer divulgou seus resultados financeiros, com aumento nas vendas de seus medicamentos."
+        },
+        {
+          "titulo": "Novo medicamento para diabetes entra em fase III de testes",
+          "link": "https://www.example.com/novo-medicamento-diabetes",
+          "resumo": "Um novo medicamento para diabetes desenvolvido pela empresa A está entrando na fase III de testes clínicos."
+        },
+        {
+          "titulo": "J&J enfrenta processo judicial por X",
+          "link": "https://www.example.com/jnj-processo",
+          "resumo": "A Johnson & Johnson está enfrentando um processo judicial relacionado ao seu produto X."
+        }
+      ]
+    },
+    "orthopedics": {
+      "name": "Ortopedia e Dispositivos Médicos",
+      "icon": "��",
+      "count": 4,
+      "description": "Principais desenvolvimentos em ortopedia e dispositivos médicos",
+      "news": [
+        {
+          "titulo": "Stryker lança novo dispositivo ortopédico",
+          "link": "https://www.example.com/stryker-novo-dispositivo",
+          "resumo": "A Stryker lançou um novo dispositivo ortopédico com tecnologia inovadora, aumentando sua participação de mercado."
+        },
+        {
+          "titulo": "Zimmer Biomet anuncia resultados financeiros abaixo das expectativas",
+          "link": "https://www.example.com/zimmer-resultados",
+          "resumo": "A Zimmer Biomet divulgou resultados financeiros abaixo do esperado, impactando negativamente o preço de suas ações."
+        },
+        {
+          "titulo": "Aprovação regulatória para novo implante de quadril",
+          "link": "https://www.example.com/implante-quadril",
+          "resumo": "Um novo implante de quadril recebeu aprovação regulatória, abrindo caminho para sua comercialização."
+        },
+        {
+          "titulo": "Globus Medical anuncia parceria estratégica",
+          "link": "https://www.example.com/globus-parceria",
+          "resumo": "A Globus Medical anunciou uma parceria estratégica que deve expandir sua presença no mercado."
+        }
+      ]
+    },
+    "ai_health": {
+      "name": "IA em Saúde",
+      "icon": "🤖",
+      "count": 3,
+      "description": "Principais desenvolvimentos em ia em saúde",
+      "news": [
+        {
+          "titulo": "Nova ferramenta de IA para diagnóstico de câncer de pele",
+          "link": "https://www.example.com/ia-cancer-pele",
+          "resumo": "Uma nova ferramenta de IA foi desenvolvida para auxiliar no diagnóstico precoce de câncer de pele."
+        },
+        {
+          "titulo": "Startup brasileira de IA em saúde recebe investimento de X milhões",
+          "link": "https://www.example.com/startup-ia-brasil",
+          "resumo": "Uma startup brasileira que utiliza IA para melhorar a gestão de saúde recebeu um investimento de X milhões."
+        },
+        {
+          "titulo": "Regulamentação de IA em saúde avança na Europa",
+          "link": "https://www.example.com/regulamentacao-ia-europa",
+          "resumo": "A União Europeia está avançando com a regulamentação do uso de IA em saúde, definindo padrões de segurança e ética."
+        }
+      ]
+    },
+    "brazil_health": {
+      "name": "Cenário Brasileiro de Saúde",
+      "icon": "��🇷",
+      "count": 3,
+      "description": "Principais desenvolvimentos em cenário brasileiro de saúde",
+      "news": [
+        {
+          "titulo": "Rede D'Or adquire novo hospital no Rio de Janeiro",
+          "link": "https://www.example.com/rede-dor-aquisição",
+          "resumo": "A Rede D'Or São Luiz adquiriu um novo hospital no Rio de Janeiro, expandindo sua presença na região."
+        },
+        {
+          "titulo": "Raia Drogasil anuncia crescimento de vendas no segundo trimestre",
+          "link": "https://www.example.com/raia-drogasil-crescimento",
+          "resumo": "A Raia Drogasil anunciou um crescimento significativo nas vendas durante o segundo trimestre."
+        },
+        {
+          "titulo": "Governo anuncia investimentos em saúde pública no Brasil",
+          "link": "https://www.example.com/governo-investimentos-saude",
+          "resumo": "O governo brasileiro anunciou novos investimentos em saúde pública, com foco em infraestrutura e equipamentos."
+        }
+      ]
+    },
+    "medtech_innovation": {
+      "name": "Inovação em MedTech",
+      "icon": "��",
+      "count": 3,
+      "description": "Principais desenvolvimentos em inovação em medtech",
+      "news": [
+        {
+          "titulo": "Novo dispositivo para tratamento de doenças cardíacas",
+          "link": "https://www.example.com/dispositivo-cardiaco",
+          "resumo": "Um novo dispositivo para tratamento de doenças cardíacas foi desenvolvido, com resultados promissores em testes clínicos."
+        },
+        {
+          "titulo": "Startup de MedTech recebe financiamento para desenvolver prótese inovadora",
+          "link": "https://www.example.com/startup-protese",
+          "resumo": "Uma startup de MedTech recebeu financiamento para desenvolver uma prótese inovadora com maior durabilidade e funcionalidade."
+        },
+        {
+          "titulo": "FDA aprova novo stent coronário",
+          "link": "https://www.example.com/fda-stent",
+          "resumo": "O FDA aprovou um novo stent coronário, que promete reduzir o risco de complicações em procedimentos cardíacos."
+        }
+      ]
+    },
+    "healthtech_startups": {
+      "name": "Startups de HealthTech",
+      "icon": "🚀",
+      "count": 4,
+      "description": "Principais desenvolvimentos em startups de healthtech",
+      "news": [
+        {
+          "titulo": "Startup de telemedicina fecha rodada de financiamento",
+          "link": "https://www.example.com/telemedicina-financiamento",
+          "resumo": "Uma startup de telemedicina fechou uma rodada de financiamento série A, impulsionando seu crescimento."
+        },
+        {
+          "titulo": "Nova plataforma de saúde digital para gerenciamento de doenças crônicas",
+          "link": "https://www.example.com/plataforma-digital-saude",
+          "resumo": "Uma nova plataforma digital para o gerenciamento de doenças crônicas foi lançada, oferecendo ferramentas inovadoras para pacientes e médicos."
+        },
+        {
+          "titulo": "Startup de mHealth lança aplicativo para monitoramento de pacientes",
+          "link": "https://www.example.com/mhealth-aplicativo",
+          "resumo": "Uma startup de mHealth lançou um aplicativo móvel para o monitoramento remoto de pacientes com doenças crônicas."
+        },
+        {
+          "titulo": "HealthTech focada em saúde mental recebe investimento anjo",
+          "link": "https://www.example.com/healthtech-mental-health",
+          "resumo": "Uma startup de HealthTech voltada para saúde mental recebeu investimento anjo, expandindo suas operações."
+        }
+      ]
+    }
+  },
+  "executive_summary": {
+    "sentiment": "Neutro",
+    "trends": [
+      "Consolidação no mercado de dispositivos médicos",
+      "Avanços em IA para diagnóstico",
+      "Crescimento do setor de HealthTech no Brasil"
+    ],
+    "key_insights": [
+      "Consolidação no mercado de dispositivos médicos",
+      "Avanços em IA para diagnóstico",
+      "Crescimento do setor de HealthTech no Brasil"
+    ]
+  },
+  "market_data": {
+    "acoes": [
+      {
+        "empresa": "Johnson & Johnson",
+        "ticker": "JNJ",
+        "preco_atual": "177.78",
+        "variacao_diaria": "-0.36%"
+      },
+      {
+        "empresa": "Pfizer Inc.",
+        "ticker": "PFE",
+        "preco_atual": "24.50",
+        "variacao_diaria": "-1.55%"
+      },
+      {
+        "empresa": "Rede D'Or São Luiz",
+        "ticker": "RDOR3.SA",
+        "preco_atual": "38.99",
+        "variacao_diaria": "-0.79%"
+      }
+    ],
+    "metricas": {
+      "indice_saude": "15000",
+      "variacao_diaria": "-0.5%"
+    }
+  },
+  "metrics": {
+    "total_news": 24,
+    "total_sectors": 8,
+    "sectors_with_news": 8,
+    "processed_at": "2025-09-08T13:55:57.839Z"
+  },
+  "sources": [
+    "https://www.economist.com/topics/health-care",
+    "https://www.reuters.com/business/healthcare-pharmaceuticals/",
+    "https://www.fiercehealthcare.com/",
+    "https://techcrunch.com/tag/health/",
+    "https://www.fiercepharma.com/",
+    "https://braziljournal.com/hot-topic/health-journal/",
+    "https://www.fiercebiotech.com/",
+    "https://www.bioworld.com/",
+    "https://orthobuzz.jbjs.org/",
+    "https://orthofeed.com/",
+    "https://www.massdevice.com/",
+    "https://www.mddionline.com/",
+    "https://braziljournal.com/hot-topic/empresas-de-saude/",
+    "https://setorsaude.com.br/",
+    "https://www.saudebusiness.com/",
+    "https://medicinasa.com.br/ultimas-noticias/",
+    "https://medicalfuturist.com/",
+    "https://medtechintelligence.com/",
+    "https://healthcaretransformers.com/digital-health/"
+  ],
+  "message": "Processamento concluído: 24 notícias em 8 setores",
+  "data": "2025-09-08",
+  "resumo_executivo": {
+    "sentimento_geral": "Positivo",
+    "principais_tendencias": [
+      "Crescimento em HealthTech",
+      "Inovação em IA"
+    ]
+  },
+  "stock_data": {
+    "farmaceuticas": [
+      {
+        "ticker": "JNJ",
+        "nome": "Johnson & Johnson",
+        "preco": 165.3,
+        "variacao": 0.5
+      },
+      {
+        "ticker": "PFE",
+        "nome": "Pfizer",
+        "preco": 48.95,
+        "variacao": 0.25
+      }
+    ],
+    "dispositivos_medicos": [
+      {
+        "ticker": "BSX",
+        "nome": "Boston Scientific",
+        "preco": 42.8,
+        "variacao": 0.3
+      },
+      {
+        "ticker": "ISRG",
+        "nome": "Intuitive Surgical",
+        "preco": 289.95,
+        "variacao": -1.5
+      }
+    ],
+    "ortopedia": [
+      {
+        "ticker": "SYK",
+        "nome": "Stryker Corporation",
+        "preco": 260,
+        "variacao": 2
+      },
+      {
+        "ticker": "ZBH",
+        "nome": "Zimmer Biomet",
+        "preco": 120.5,
+        "variacao": 1.5
+      }
+    ],
+    "acoes_brasileiras": [
+      {
+        "ticker": "RDOR3",
+        "nome": "Rede D'Or",
+        "preco": 45.75,
+        "variacao": 0.35
+      },
+      {
+        "ticker": "DASA3",
+        "nome": "DASA",
+        "preco": 58.9,
+        "variacao": 0.75
+      }
+    ]
+  },
+  "trend_data": {
+    "labels": [
+      "Telemedicina",
+      "IA em Saúde",
+      "Dispositivos Wearables"
+    ],
+    "datasets": [
+      {
+        "label": "Crescimento Esperado (%)",
+        "data": [
+          25,
+          30,
+          20
+        ],
+        "backgroundColor": [
+          "rgba(54, 162, 235, 0.6)",
+          "rgba(255, 99, 132, 0.6)",
+          "rgba(255, 205, 86, 0.6)"
+        ]
+      }
+    ]
+  },
+  "sector_performance": {
+    "labels": [
+      "Farmacêuticas",
+      "Dispositivos Médicos",
+      "Ortopedia"
+    ],
+    "datasets": [
+      {
+        "label": "Performance Média (%)",
+        "data": [
+          1.2,
+          0.8,
+          0.6
+        ],
+        "backgroundColor": [
+          "rgba(255, 99, 132, 0.6)",
+          "rgba(54, 162, 235, 0.6)",
+          "rgba(255, 205, 86, 0.6)"
+        ]
+      }
+    ]
+  },
+  "principais_noticias": [
+    "HealthTech startup recebe investimento de série B",
+    "Novo dispositivo médico aprovado pela FDA",
+    "IA revoluciona diagnósticos médicos"
+  ],
+  "metricas": {
+    "total_acoes": 8,
+    "setores_analisados": 4,
+    "noticias_processadas": 3
+  },
+  "generated_at": "2025-09-08T13:56:32.939Z",
+  "version": "1.0"
+}
